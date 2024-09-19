@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <form id="birth-date-form">
+        <div class="container">
+          <label for="birth-day">day</label>
+          <input type="text" id="birth-day" name="birth-day" />
+        </div>
+        <div class="container">
+          <label for="birth-month">month</label>
+          <input type="text" id="birth-month" name="birth-month" />
+        </div>
+        <div class="container">
+          <label for="birth-year">year</label>
+          <input type="text" id="birth-year" name="birth-year" />
+        </div>
+        <button type="submit">
+          <img src="assets/images/icon-arrow.svg" alt="button icon" />
+        </button>
+      </form>
+      <hr />
+      <div class="calculated-age">
+        <div><span id="calculated-years" class="highlight">--</span> years</div>
+        <div>
+          <span id="calculated-months" class="highlight">--</span> months
+        </div>
+        <div><span id="calculated-days" class="highlight">--</span> days</div>
+      </div>
+    </article>
+  </body>
+</html>
